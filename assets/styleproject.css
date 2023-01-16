@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro:wght@600&display=swap');
+
+html{
+	scroll-behavior : smooth;
+}
+
+/* Header */
+.nav-item:hover .nav-link{
+	color: #8167a9 !important;
+}
+.nav-item.active .nav-link{
+	color: #777 !important;
+}
+.nav-link {
+	position: relative;
+	padding: 5px 0 !important;
+	display: inline-block;
+}
+.nav-item:after{
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	content: '';
+	background-color: #8167a9;
+	opacity: 0;
+    transition: all 200ms linear;
+}
+.nav-item:hover:after{
+	bottom: 0;
+	opacity: 1;
+}
+.nav-item.active:hover:after{
+	opacity: 0;
+}
+.nav-item{
+	position: relative;
+    transition: all 200ms linear;
+}
+
+/* Short Bio */
+.short-bio{
+	padding-top: 0;
+	color: #4A2040;
+    text-decoration: none;
+	text-align : center;
+	font-size: 18px;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+body {
+   font-family: 'Quicksand', sans-serif;
+   margin : 0;
+   padding : 0;
+   height : 100%;
+   color: #151515;
+   background-color: #EFF2F1;
+}
+
+/* Navigation Bar */
+nav{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: inline-block;
+	width : 100%;
+	background-color: rgba(64, 32, 64, 0.75);
+	padding: 1px;
+	right: 0;
+	top:0;
+	width : 100%;
+	position: fixed;
+	border : 4px double #1860A4;
+	text-align: right;
+	z-index : 10000;
+}
+
+header {
+   display: inline;
+}
+
+
+nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color : white;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   display : inline;
+}
+
+nav a:hover{
+	text-shadow : 1px 1px 3px #5049E7;
+	font-size : 1.15em;
+}
+
+nav a:after {    
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+nav a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+nav li {
+	text-align : center;
+	display : inline-block;
+	position: relative;
+	list-style-type : none;
+	margin-right : 30px;
+	padding-bottom: 5px;
+}
+
+
+*{
+	box-sizing : border-box;
+}
+
+main {
+	padding : 20px;
+	overflow : auto;
+}
+
+.card {
+	box-shadow : 4px 4px 8px 10px rgba(0,0,0,0.2);
+	border-radius : 10px;
+	padding : 30px;
+	margin-top : 20px;
+	overflow: auto;
+}
+
+#projects {
+	margin : 0 auto;
+	margin-bottom : 30px;
+	width : 75%;
+}
+ 
+h2{
+	/* text-shadow: 2px 2px 2px rgba(64, 32, 64, 0.75); */
+	font-size : 2em;
+  font-family: Montserrat;
+}
+
+/* Gallery */
+  
+/* Center website */
+main {
+	max-width: 100%;
+	margin: auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 50px;
+	word-break: break-all;
+}
+
+.row {
+	margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+	padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 33.33%;
+	display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Content */
+.content {
+	background-color: white;
+	padding: 10px;
+	position: relative;
+}
+
+.content:hover {
+	opacity: 0.5;
+  }
+
+.image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	border-radius: 10px;
+	background-color: rgba(64, 32, 64, 0.75);
+	border : black;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+	padding: 20px;
+	margin: auto;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.content:hover .middle{
+	opacity: 1;
+	background-color: #666;
+  }
+
+.middle span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.middle span:after {
+	content: '\00AB';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: -20px;
+	transition: 0.5s;
+}
+
+.middle:hover span {
+	padding-left: 25px;
+}
+
+.middle:hover span:after {
+	opacity: 1;
+	left: 0;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+	display: block;
+}
+
+/* Style the buttons */
+.btn {	
+	font-family: 'Montserrat';
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: white;
+	cursor: pointer;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+	background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+	background-color: #666;
+	color: white;
+}
+
+.penjelasan {
+	font-size : 1.15em;
+	text-align: justify;
+	padding: 5px;
+}
+
+ /*Button*/
+.button {
+  border-radius: 10px;
+  background-color: rgba(64, 32, 64, 0.75);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 20px;
+  width: 300px;
+  margin: auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 500px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00AB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-left: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+ /*ButtonCV*/
+.buttonCV {
+  border-radius: 10px;
+  display: inline-block;
+  background-color: rgba(64, 32, 64, 0.75);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 20px;
+  width: 250 px;
+  margin-left: 230px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  box-shadow: 0 9px #999
+}
+
+.buttonCV:hover {background-color: rgba(146, 55, 77, 0.5)}
+
+.buttonCV:active {
+  background-color: rgba(146, 55, 77, 0.5);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+ /*Buttonmedia*/
+.buttonmedia {
+  position: relative;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #4C47D9;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  padding: 20px;
+  width: 250 px;
+  margin-left: 275px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.buttonmedia:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.buttonmedia:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.kata {
+	text-align : center;
+	font-family : 'Balsamiq Sans', cursive;
+	font-size : 1.5em;
+	color :#25579F;
+}
+
+section {
+	border-bottom : 4px dotted #1860A4;
+	width : 100%;
+}
+
+aside {
+	background : rgba(51,118,200,0.25);
+	margin : 0 auto;
+	width : 30%;
+}
+
+
+#buttonTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    font-size: 18px;
+    background-color: rgba(64, 32, 64, 0.75);
+    color: white;
+	border : none;
+	outline : none;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 100px;
+}
+ 
+#buttonTop:hover {
+    background-color: rgba(146, 55, 77, 0.5);
+}
+
+
+footer {
+	font-size : 1em;
+  font-family : Montserrat;
+	width : 100%;
+	margin-top : 20px;
+	padding: 10px;
+	color: white;
+	background-color: rgba(64, 32, 64, 0.75);
+	text-align: center;
+	font-weight: bold;
+  /* border-radius: 10px; */
+	border-top-left-radius : 12em 3em;
+	border-bottom-right-radius : 3em;
+}
+
+@media screen and (max-width : 1000px){
+	nav {
+		height : 7ex;
+		padding: 0;
+		margin : 0;
+		top :0;
+		left: 0;
+		overflow : auto;
+		text-align : center;
+	}
+	nav a {
+		font-size: 0.8em;
+		text-align : justify;
+		padding-top : 0;
+		padding-right : 0;
+		padding-left : -20px;
+	}
+	nav li {
+		padding-top : 0;
+		text-align : left;
+		left : -25px;;
+	}
+	.card {
+		width : 100%;
+	}
+	.kata {
+		width : 100%;
+		font-size : 1.5em;
+		padding : 10px;
+	}
+	#content,
+	aside {
+		width : 100%;
+		padding : 0;
+		overflow : auto;
+	}
+}
+
+/* https://png.clipart.me/istock/previews/6200/62001366-toddler-cleaning-window.jpg  */
+

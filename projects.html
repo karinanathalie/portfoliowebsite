@@ -1,0 +1,89 @@
+<html>
+
+<head>
+	<title>Karina's Portfolio Website </title>
+	<link rel="stylesheet" href="assets/styleproject.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<article>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">About Me </a></li>
+					<li><a href="experiences.html">Education</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="assets/resume.pdf">Resume</a></li>
+				</ul>
+			</nav>
+		</header>
+	</article>
+	
+	<main>
+	<div id="projects">
+		<div id="myBtnContainer">
+			<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+			<button class="btn" onclick="filterSelection('ideation')">Product Ideation and Design</button>
+			<button class="btn" onclick="filterSelection('game')">Game Development</button>
+			<button class="btn" onclick="filterSelection('analysis')">Data Analysis</button>
+		  </div>
+		  
+		  <div class="row">
+			<div class="column ideation">
+			  <div class="content">
+				<img src="assets/artique.png" class= "image" style="width:100%">
+				<a href="https://drive.google.com/drive/folders/1II6qEuPfUtkoOt36GwH2AJRQd3RDDtGv?usp=share_link"><button class="middle">See More</button></a>
+				<h4>Artique (2022)</h4>
+				<p>Developed a system that uses AI and Big Data to address the identified issues, aiming to maximize each user's clothing utilization while assisting in creating fashionable outfits.</p>
+			  </div>
+			</div>
+			<div class="column ideation"> 
+			  <div class="content">
+				<img src="assets/nave.png" style="width:100%">
+				<a href="https://drive.google.com/drive/folders/1vA1cE1NIrE5SrMulYLOc-MoEhq3U7Tmg?usp=share_link"><button class="middle">See More</button></a>
+				<h4>NaVe (2022)</h4>
+				<p>A service platform focusing on creating a sustainable future by providing recycling initiatives in the form of an application, vending machine, and recycled products.</p>
+			  </div>
+			</div>
+		  
+			<div class="column game">
+			  <div class="content">
+				<img src="assets/bombs.png" style="width:100%">
+				<a href="https://github.com/karinanathalie/bombsandbooster"><button class="middle">See More</button></a>
+				<h4>Bombs and Booster (2022)</h4>
+				<p>A python-based board game inspired by a classic household game, Snakes and Ladders by making use of external libraries to produce colored output displays and animations.</p>
+			  </div>
+			</div>
+			<div class="column game">
+			  <div class="content">
+				<img src="assets/hangman.png" style="width:100%">
+				<a href="https://github.com/karinanathalie/hangman"><button class="middle">See More</button></a>
+				<h4>Animated Hangman (2020)</h4>
+				<p>Constructed a python code of the classic game “Hangman” with some ASCII Art for the intro</p>
+			  </div>
+			</div>
+		  
+			<div class="column analysis">
+			  <div class="content">
+				<img src="assets/literacy.png" alt="People" style="width:100%">
+				<a href="https://drive.google.com/drive/folders/1_FvW205BJm4Xxdhv4Eknxm-A3f5kB2JB?usp=sharing"><button class="middle">See More</button></a>
+				<h4>Literacy Analysis (2021)</h4>
+				<p>Analyze ASEAN Countries' Literacy Rates and its Government Expenditure on Education.</p>
+			  </div>
+			</div>
+		  </div>
+
+
+		<button  onclick = "topFunction()" id= "buttonTop" title="Top">&uarr;</button>
+	</main>
+	
+		<footer>
+		<p>Karina Nathalie, 2022</p>
+		</footer>
+	
+	   <script src="assets/java.js"></script>
+		
+</body>
+
+</html>
