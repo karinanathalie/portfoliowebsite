@@ -1,2 +1,2 @@
-# personalwebsite
-Karina Nathalie's Personal Website
+# portfoliowebsite
+Karina Nathalie's Portfolio Website
